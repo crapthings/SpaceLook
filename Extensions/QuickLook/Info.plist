@@ -33,6 +33,7 @@
 				<string>public.yaml</string>
 				<string>public.zip-archive</string>
 				<string>public.folder</string>
+				<string>org.khronos.glb</string>
 			</array>
 			<key>QLSupportsSearchableItems</key>
 			<false/>

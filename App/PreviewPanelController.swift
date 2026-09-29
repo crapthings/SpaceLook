@@ -42,6 +42,7 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         guard let window, window.isVisible else { return }
         saveFrame(of: window)
         window.orderOut(nil)
+        window.contentViewController = nil
         onClose?()
         onClose = nil
     }
@@ -62,6 +63,11 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         window.delegate = self
         self.window = window
         return window
+    }
+
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        close()
+        return false
     }
 
     func windowDidResize(_ notification: Notification) {

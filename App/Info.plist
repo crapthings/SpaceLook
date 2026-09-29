@@ -33,6 +33,19 @@
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>org.khronos.glb</string>
+			<key>UTTypeDescription</key>
+			<string>glTF Binary Model</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string><string>public.3d-content</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key><array><string>glb</string></array>
+				<key>public.mime-type</key><string>model/gltf-binary</string>
+			</dict>
+		</dict>
+		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.plain-text</string>

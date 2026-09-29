@@ -40,10 +40,10 @@ Grant Accessibility and Finder Automation access when prompted to use the custom
 - `App`: menu bar, Finder selection, keyboard handling, and remembered preview windows.
 - `Extensions/QuickLook`: adapts system preview requests to the shared modules.
 - `Packages/SpaceLookPreview`: format modules, routing, and shared UI.
-- `Design`: editable SVG masters and exported icons.
+- `Design`: editable SVG masters, exported icons, and model viewer JavaScript sources.
 - `scripts`: local installation and icon generation.
 
-To add a format, implement `PreviewModule` in a package target, register it in `BuiltInPreviews`, and update the extension's supported content types. Choose the appropriate text or table layout family. Keep expensive work off the main thread, bound resource use, and support cancellation.
+To add a format, implement `PreviewModule` in a package target, register it in `BuiltInPreviews`, and update the extension's supported content types. Choose the appropriate text, table, or model layout family. Keep expensive work off the main thread, bound resource use, and support cancellation.
 
 Verify both the running app and the system Quick Look extension. For window changes, check resizing, moving, closing and reopening, and switching between document and list previews.
 
@@ -56,3 +56,9 @@ python3 scripts/generate-icons.py
 ```
 
 This uses system WebKit and Xcode tools; no third-party Python packages are needed.
+
+## GLB viewer
+
+The `ModelPreview` module embeds an offline Three.js viewer in WebKit. The bundled script is checked in; normal Xcode builds do not require Node.js. To change the viewer, edit `Design/ModelViewer/viewer.js` and run `zsh scripts/build-model-viewer.sh` to rebuild it with pinned dependencies.
+
+Use `Fixtures/Models/Cube.glb` for a basic preview check. Verify orbit/zoom, the three background choices, loading/error states, and close/reopen behavior. Also test malformed files and files larger than 128 MB. Three.js's MIT license is bundled alongside its JavaScript.

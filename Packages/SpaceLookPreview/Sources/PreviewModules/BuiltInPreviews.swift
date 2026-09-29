@@ -1,5 +1,6 @@
 import DirectoryPreview
 import MarkdownPreview
+import ModelPreview
 import PreviewCore
 import StructuredTextPreview
 import ZipPreview
@@ -11,6 +12,6 @@ public typealias PreviewLayoutKind = PreviewCore.PreviewLayoutKind
 @MainActor
 public enum BuiltInPreviews {
     public static func makeRegistry() -> PreviewRegistry {
-        PreviewRegistry(modules: [DirectoryModule(), MarkdownModule(), StructuredTextModule(), ZipModule()])
+        PreviewRegistry(modules: [DirectoryModule(), MarkdownModule(), StructuredTextModule(), ZipModule(), ModelModule()])
     }
 }

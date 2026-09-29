@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' blob: data:; img-src blob: data:; worker-src blob:">
+  <title>Model preview</title>
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <canvas aria-label="3D model: drag to rotate, scroll to zoom"></canvas>
+  <div id="toolbar" role="group" aria-label="Background color">
+    <button data-color="white" title="White background" aria-label="White background" aria-pressed="false"></button>
+    <button data-color="gray" title="Gray background" aria-label="Gray background" aria-pressed="true"></button>
+    <button data-color="black" title="Black background" aria-label="Black background" aria-pressed="false"></button>
+  </div>
+  <div id="hint">Drag to rotate · Scroll to zoom · Double-click to reset</div>
+  <script src="viewer.js"></script>
+</body>
+</html>

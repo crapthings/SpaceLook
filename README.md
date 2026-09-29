@@ -6,7 +6,7 @@
 
 <p align="center"><strong>More to see. Just press Space.</strong></p>
 
-<p align="center">Preview Markdown, JSON, YAML, ZIP archives, and folders right in Finder.</p>
+<p align="center">Preview Markdown, JSON, YAML, 3D models, ZIP archives, and folders right in Finder.</p>
 
 SpaceLook brings more of your everyday files to the preview shortcut you already know. Read a document, check a configuration file, or see what’s inside an archive—all without leaving Finder.
 
@@ -28,10 +28,14 @@ See file names, paths, and original and compressed sizes without extracting the 
 
 See a folder’s immediate contents in a clear list, with file types, sizes, and modification dates.
 
+### Explore 3D models
+
+Open a GLB model, drag to rotate, and scroll to zoom. The model is framed automatically; double-click to reset the view. Choose a white, gray, or black background to suit your asset. A loading indicator stays visible while the model is being prepared.
+
 ## Fits the way you use your Mac
 
 - **Stay in Finder.** Select an item and press Space. Press Space again or Escape to close.
-- **Make room for your content.** Resize and move the SpaceLook preview window. While the app is running, it remembers separate window layouts for documents and file lists.
+- **Make room for your content.** Resize and move the SpaceLook preview window. While the app is running, it remembers separate window layouts for documents, file lists, and 3D models.
 - **Keep your Dock clear.** SpaceLook lives in the menu bar, with a single option to quit.
 - **Keep familiar previews.** Photos, videos, music, and other formats continue to use the system preview.
 
@@ -55,6 +59,10 @@ Markdown, JSON, and YAML previews support UTF-8 files up to 2 MB. Archive and fo
 
 **Does a folder preview include everything inside it?**  
 It shows the immediate, visible contents. Hidden items and nested folder contents are omitted, and folder sizes are not calculated recursively.
+
+**Which 3D models can I preview?**
+
+Self-contained glTF 2.0 binary (`.glb`) files up to 128 MB, shown in a static pose. The viewer works offline. This first version does not support external asset files, animation playback, or Draco, Meshopt, and KTX2 compression. Complex geometry and large textures may exceed available graphics memory even within the file size limit.
 
 ## Open source
 

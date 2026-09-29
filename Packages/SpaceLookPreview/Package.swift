@@ -14,6 +14,7 @@ let package = Package(
     targets: [
         .target(name: "PreviewCore"),
         .target(name: "DirectoryPreview", dependencies: ["PreviewCore"]),
+        .target(name: "ModelPreview", dependencies: ["PreviewCore"], resources: [.copy("Resources")]),
         .target(
             name: "PreviewUI",
             dependencies: [.product(name: "Highlighter", package: "HighlighterSwift")]
@@ -33,7 +34,7 @@ let package = Package(
         ),
         .target(
             name: "PreviewModules",
-            dependencies: ["PreviewCore", "DirectoryPreview", "MarkdownPreview", "StructuredTextPreview", "ZipPreview"]
+            dependencies: ["PreviewCore", "DirectoryPreview", "MarkdownPreview", "StructuredTextPreview", "ZipPreview", "ModelPreview"]
         )
     ]
 )

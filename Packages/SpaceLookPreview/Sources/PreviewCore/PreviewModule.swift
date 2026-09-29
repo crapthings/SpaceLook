@@ -5,6 +5,7 @@ import UniformTypeIdentifiers
 public enum PreviewLayoutKind: String, Sendable {
     case text
     case table
+    case model
 }
 
 // Couples a module-owned controller with its preferred window layout family.
