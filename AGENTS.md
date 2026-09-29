@@ -1,0 +1,3 @@
+- Avoid overengineering: question necessity before implementing; use the simplest sufficient solution.
+- Explain every top-level declaration in a one-sentence comment; split code that needs more.
+- Organize by responsibility into cohesive, loosely coupled modules.

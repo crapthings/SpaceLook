@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        B50000000000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50000000000000000000005 /* Assets.xcassets */; };
+		38113E2EBFAA8C1A735D6604 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E84CA86730120F4EDD4F5C39 /* SwiftPackageProductDependency */; };
+		4A34FC589A8323B51DD7A728 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5443B70AC3568844CC59506B /* Cocoa.framework */; };
+		5B79B9FBF1A90FE6EC01D687 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5443B70AC3568844CC59506B /* Cocoa.framework */; };
+		6D1A9BB20D6535384813C1D4 /* SpaceLookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967D0888E34A82C0DDE94B2 /* SpaceLookApp.swift */; };
+		B10000000000000000000001 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* AppCoordinator.swift */; };
+		B20000000000000000000002 /* GlobalKeyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* GlobalKeyMonitor.swift */; };
+		B30000000000000000000003 /* FinderSelectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000003 /* FinderSelectionProvider.swift */; };
+		B40000000000000000000004 /* PreviewPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000004 /* PreviewPanelController.swift */; };
+		CD9D910E96476A1D17219137 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FF66344BAF8FC69F04A34 /* PreviewViewController.swift */; };
+		D7B82B5C49B28683811BD5D7 /* SpaceLookQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2AA44CF524F5502707F6E16B /* SpaceLookQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E228DB81007928B332EC84FC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = ADA5A61B9E24D276EA84A8E9 /* SwiftPackageProductDependency */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC2577E87AF51E2D545CFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137A8F5C9BC105496F3CD73A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F573742341C766E814E7A3D;
+			remoteInfo = SpaceLookQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		405779D8BEA5ACE9937B9099 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D7B82B5C49B28683811BD5D7 /* SpaceLookQuickLook.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+        A50000000000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		1820871C670634D3A3A1BE34 /* SpaceLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2527906905E4023BE3AB61C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA44CF524F5502707F6E16B /* SpaceLookQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpaceLookQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5FF66344BAF8FC69F04A34 /* PreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		5443B70AC3568844CC59506B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A10000000000000000000001 /* AppCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* GlobalKeyMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GlobalKeyMonitor.swift; sourceTree = "<group>"; };
+		A30000000000000000000003 /* FinderSelectionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FinderSelectionProvider.swift; sourceTree = "<group>"; };
+		A40000000000000000000004 /* PreviewPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewPanelController.swift; sourceTree = "<group>"; };
+		BC57D510462210CA4D3F4ACE /* SpaceLook.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = SpaceLook.entitlements; sourceTree = "<group>"; };
+		C967D0888E34A82C0DDE94B2 /* SpaceLookApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceLookApp.swift; sourceTree = "<group>"; };
+		CD1AC2F307827803B2822792 /* QuickLook.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = QuickLook.entitlements; sourceTree = "<group>"; };
+		D8E3E922E19FDC5D7EE44B7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		216876245AD7EBE90319FD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B79B9FBF1A90FE6EC01D687 /* Cocoa.framework in Frameworks */,
+				38113E2EBFAA8C1A735D6604 /* BuildFile in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414B39C7A8D04EB70CD4ECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A34FC589A8323B51DD7A728 /* Cocoa.framework in Frameworks */,
+				E228DB81007928B332EC84FC /* BuildFile in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0913A6E739DF2150C16C855B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1820871C670634D3A3A1BE34 /* SpaceLook.app */,
+				2AA44CF524F5502707F6E16B /* SpaceLookQuickLook.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		448332D3D3F49478EA8CEB3E = {
+			isa = PBXGroup;
+			children = (
+				0913A6E739DF2150C16C855B /* Products */,
+				660FE88486C46EDF85D2D65D /* Frameworks */,
+				A0D2DB6C57CA1980D391F49F /* App */,
+				6013DA115C9958F7921080E3 /* Extensions/QuickLook */,
+			);
+			sourceTree = "<group>";
+		};
+		6013DA115C9958F7921080E3 /* Extensions/QuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				D8E3E922E19FDC5D7EE44B7C /* Info.plist */,
+				2C5FF66344BAF8FC69F04A34 /* PreviewViewController.swift */,
+				CD1AC2F307827803B2822792 /* QuickLook.entitlements */,
+			);
+			name = Extensions/QuickLook;
+			path = Extensions/QuickLook;
+			sourceTree = "<group>";
+		};
+		660FE88486C46EDF85D2D65D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD77FC6CC217764A76FBDB /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0D2DB6C57CA1980D391F49F /* App */ = {
+			isa = PBXGroup;
+			children = (
+                A50000000000000000000005 /* Assets.xcassets */,
+				2527906905E4023BE3AB61C6 /* Info.plist */,
+				A10000000000000000000001 /* AppCoordinator.swift */,
+				A30000000000000000000003 /* FinderSelectionProvider.swift */,
+				A20000000000000000000002 /* GlobalKeyMonitor.swift */,
+				A40000000000000000000004 /* PreviewPanelController.swift */,
+				BC57D510462210CA4D3F4ACE /* SpaceLook.entitlements */,
+				C967D0888E34A82C0DDE94B2 /* SpaceLookApp.swift */,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDBD77FC6CC217764A76FBDB /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5443B70AC3568844CC59506B /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F573742341C766E814E7A3D /* SpaceLookQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09377BEDA80645598F4F04D9 /* Build configuration list for PBXNativeTarget "SpaceLookQuickLook" */;
+			buildPhases = (
+				2011E1742E06860F1A1CEB23 /* Sources */,
+				216876245AD7EBE90319FD84 /* Frameworks */,
+				B592E28912F761A67465AF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceLookQuickLook;
+			packageProductDependencies = (
+				E84CA86730120F4EDD4F5C39 /* SwiftPackageProductDependency */,
+			);
+			productName = SpaceLookQuickLook;
+			productReference = 2AA44CF524F5502707F6E16B /* SpaceLookQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4EF11FB83B76536A1ED8AA8C /* SpaceLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E08CC04D0CBB3A393A504A0 /* Build configuration list for PBXNativeTarget "SpaceLook" */;
+			buildPhases = (
+				5BA540059F88502382EC4A1A /* Sources */,
+				C414B39C7A8D04EB70CD4ECC /* Frameworks */,
+				463BE7B30F6895713489D6AE /* Resources */,
+				405779D8BEA5ACE9937B9099 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A06197F48E48FF0420E3176B /* PBXTargetDependency */,
+			);
+			name = SpaceLook;
+			packageProductDependencies = (
+				ADA5A61B9E24D276EA84A8E9 /* SwiftPackageProductDependency */,
+			);
+			productName = SpaceLook;
+			productReference = 1820871C670634D3A3A1BE34 /* SpaceLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		137A8F5C9BC105496F3CD73A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 22015E4A49B8287DBF7BE645 /* Build configuration list for PBXProject "SpaceLook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 448332D3D3F49478EA8CEB3E;
+			packageReferences = (
+				73A38EB1B7B729B842CF4F8A /* LocalSwiftPackageReference */,
+			);
+			productRefGroup = 0913A6E739DF2150C16C855B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EF11FB83B76536A1ED8AA8C /* SpaceLook */,
+				1F573742341C766E814E7A3D /* SpaceLookQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463BE7B30F6895713489D6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+                B50000000000000000000005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B592E28912F761A67465AF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2011E1742E06860F1A1CEB23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9D910E96476A1D17219137 /* PreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA540059F88502382EC4A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* AppCoordinator.swift in Sources */,
+				B30000000000000000000003 /* FinderSelectionProvider.swift in Sources */,
+				B20000000000000000000002 /* GlobalKeyMonitor.swift in Sources */,
+				B40000000000000000000004 /* PreviewPanelController.swift in Sources */,
+				6D1A9BB20D6535384813C1D4 /* SpaceLookApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A06197F48E48FF0420E3176B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpaceLookQuickLook;
+			target = 1F573742341C766E814E7A3D /* SpaceLookQuickLook */;
+			targetProxy = 1EC2577E87AF51E2D545CFA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		308996903866313CA04D2960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		55BE813BC92A3814730447CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/QuickLook/QuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extensions/QuickLook/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spacelook.app.quicklook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		77202BD4835C710707536863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/SpaceLook.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spacelook.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		9BDADF72DE0EF65A0872358F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/QuickLook/QuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extensions/QuickLook/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spacelook.app.quicklook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D5C1FBE6A68D0FF066630607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F9FAC1E5B6F3970C22B586C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/SpaceLook.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spacelook.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09377BEDA80645598F4F04D9 /* Build configuration list for PBXNativeTarget "SpaceLookQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDADF72DE0EF65A0872358F /* Release */,
+				55BE813BC92A3814730447CB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22015E4A49B8287DBF7BE645 /* Build configuration list for PBXProject "SpaceLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C1FBE6A68D0FF066630607 /* Debug */,
+				308996903866313CA04D2960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E08CC04D0CBB3A393A504A0 /* Build configuration list for PBXNativeTarget "SpaceLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77202BD4835C710707536863 /* Release */,
+				F9FAC1E5B6F3970C22B586C3 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		73A38EB1B7B729B842CF4F8A /* LocalSwiftPackageReference */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SpaceLookPreview;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA5A61B9E24D276EA84A8E9 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreviewModules;
+		};
+		E84CA86730120F4EDD4F5C39 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreviewModules;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 137A8F5C9BC105496F3CD73A /* Project object */;
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>SpaceLook — lift to look</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#263455"/><stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="lift" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#63EACB"/><stop offset="1" stop-color="#B8FFF0"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="72" width="896" height="896" rx="208" fill="#000" opacity=".14"/>
+  <rect x="64" y="56" width="896" height="896" rx="208" fill="url(#tile)"/>
+  <rect x="65" y="57" width="894" height="894" rx="207" fill="none" stroke="#FFF" stroke-opacity=".12" stroke-width="2"/>
+  <!-- An open preview aperture lifts above a spacebar-shaped lower edge. -->
+  <path d="M256 488C320 384 404 328 512 328S704 384 768 488" fill="none" stroke="url(#lift)" stroke-width="64" stroke-linecap="round"/>
+  <circle cx="512" cy="480" r="76" fill="url(#lift)"/>
+  <path d="M280 612V660Q280 688 308 688H716Q744 688 744 660V612" fill="none" stroke="#F4F8FF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
